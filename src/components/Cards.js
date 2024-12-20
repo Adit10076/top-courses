@@ -1,4 +1,5 @@
 import Card from './Card.js'
+import {btnClick}  from './FilterCourse.js'
 function Cards({info , selectedId}){
 
     return(
@@ -15,6 +16,8 @@ function Cards({info , selectedId}){
                             if(category===selectedId){
                                 return(
                                     <Card {...course}></Card>
+                                    
+
                                 )
                             }
                             return null;

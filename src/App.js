@@ -4,7 +4,8 @@ import Navbar from './components/Navbar.js';
 import Cards from './components/Cards.js';
 import FilterCourse from './components/FilterCourse.js';
 import { apiUrl } from './data.js';
-
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -42,6 +43,7 @@ const App = () => {
       </div>
 
       {data ? <Cards info={data} selectedId={selectedId}/> : <p>Loading courses...</p>}
+      <ToastContainer/>
     </div>
   );
 };

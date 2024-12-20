@@ -16,7 +16,19 @@ body {
     font-size: 3rem;
     text-align: center;
 }
+.btn-icon{
+    background-color: #1F2937;
+    height: fit-content;
+    width: fit-content;
+    border:none;
 
+}
+.fc-like,.fc-dislike{
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top:230px;
+}
 .heading-container {
     width: 100vw;
     height: 10vh;
@@ -61,6 +73,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #1F2937;
     gap: 2rem;
+    position: relative;
 }
 
 .card:hover {
@@ -90,6 +103,16 @@ body {
     border-radius: 10px;
     border: #3A3C5C;
 }
+.btn-white-active{
+    margin-top: 18px;
+    padding: 10px 80px;
+    cursor: pointer;
+    background-color: #4A5568;
+    color: #E5E5E5;
+    border-radius: 10px;
+    border: white;
+}
+
 
 .btn-white:hover {
     background-color: #2D3748;
